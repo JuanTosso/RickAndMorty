@@ -1,0 +1,11 @@
+.contenedor {
+display: flex;
+margin: 1em;
+flex-direction: column;
+}
+.favoritos {
+    display: flex;
+}
+.selectores {
+    margin:1em
+}

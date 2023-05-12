@@ -1,0 +1,13 @@
+.contenedor {
+    background-color: rgba(29, 27, 84, 0.8);
+    border-radius: 28%;
+    color: rgb(29, 26, 26,0,1);
+    
+
+
+    width: 50%;
+    margin: auto;
+    margin-top: 10%;
+    padding: 0.4em;
+}
+

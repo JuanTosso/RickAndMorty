@@ -1,0 +1,40 @@
+.nav {
+    width: 100%;
+    background-color: rgba(15, 22, 74, 0.7);
+    padding: 0.4em;
+    display: flex;
+}
+
+.rand {
+    border-radius: 50%;
+    background-color: #00b300;
+    transition: box-shadow 0.3s ease-in-out;
+    border: none  ;
+    border-style: dashed;
+    font-size: 0.7em;
+    margin-right: 0;
+    margin-left: auto;
+    font-weight: bolder;
+    color:black ;
+    padding: 0.8em;
+    cursor: pointer;
+    
+}
+.rand:hover{
+    box-shadow: 0 0 50px  #00FF00;
+}
+.botoncito {
+    background-color: yellow;
+    margin-left: 1em;
+    margin-right: 1em;
+   
+}
+
+.botoncito a {
+    text-decoration: none;
+    font-weight: bold;
+}
+.logOut{
+    margin: 0.5em;
+    
+}

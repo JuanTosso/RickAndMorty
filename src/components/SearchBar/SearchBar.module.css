@@ -1,0 +1,28 @@
+.contenedor {
+    background-color: gainsboro;
+    width: fit-content;
+    padding: 0.5em;
+    position: sticky;
+    margin-right: 0px;
+    margin-left: 1em;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor input,.contenedor button {
+    border-radius: 5px;
+    border: 0.3px;
+    padding: 0.4em;
+    font-size: 0.8em;
+    
+}
+.contenedor button {
+    background-color: yellow;
+    width: fit-content;
+}
+.contenedor input{
+    width: 60%;
+}
+

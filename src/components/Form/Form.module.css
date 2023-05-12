@@ -1,0 +1,10 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+    width: 40%;
+    margin: auto;
+    background-color: rgb(0, 0, 139,0.2);
+    padding: 2em;
+}
