@@ -1,4 +1,4 @@
-import { connect } from "react-redux";
+import { connect } from "react-redux"; //solo se usa en sintaxis de clase
 import Card from "../Card/Card";
 import style from './Favorites.module.css';
 import { orderCards, filterCards } from "../../Redux/actions";

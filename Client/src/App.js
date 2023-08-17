@@ -1,9 +1,9 @@
-import './App.css';
-import Cards from './components/Cards/Cards.jsx';
-import NavBar from './components/navBar/NavBar';
-import { useState, useEffect} from 'react';
+import './App.css';//
+import { useState, useEffect} from 'react';//
 import  axios from 'axios';
 import { Route, Routes, useNavigate } from 'react-router-dom';
+import Cards from './components/Cards/Cards.jsx';
+import NavBar from './components/navBar/NavBar';
 import About from './components/About/About';
 import Detail from './components/Detail/Detail';
 import Error from './components/Error/Error';
@@ -14,9 +14,11 @@ import Favorites from './components/Favorites/Favorites';
 
 function App() {
    
+   //se utiliza un estado local para buscar personajes (fc onSearch, onClose, repetidos)
    const [characters,setCharacters] = useState([])
-
+   //se utiliza el hook useNavigate para navegar en las funciones relacionadas al loggin
    const navigate = useNavigate();
+   //Se crea estado local para manejar los accesos (fc login, logout, y el useffect para evitar que gente sin acceso pueda entrar)
    const [access,setAccess] = useState(false)
 
    
@@ -35,7 +37,7 @@ function App() {
          
    
    }
-
+   //Esto garantiza que no se puedan loggear usuarios no autenticados
    useEffect(() => {
       !access && navigate('/');
    }, [access]);
@@ -84,6 +86,7 @@ function App() {
    
    return (
       <div className='App'>
+         {/* //Si bien el navBar esta disponible en todas las rutas, se hizo una configuracion en el modulo, para que no aparezca en la ruta '/' */}
          <NavBar onSearch = {onSearch} logOut= {logOut}/>
 
          <Routes>

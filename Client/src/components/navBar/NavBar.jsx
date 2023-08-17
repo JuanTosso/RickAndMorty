@@ -8,7 +8,7 @@ import { useLocation } from 'react-router-dom';
 const NavBar = ({onSearch,logOut}) => {
     const Location = useLocation()
    
-
+    //Para que no aparezca en la ruta '/', antes de que la gente se loggie
     if (Location.pathname === '/'){
         return null;
     } 
